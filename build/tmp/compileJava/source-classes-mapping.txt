@@ -1,6 +1,4 @@
 com/bridgelabz/addressbook/AddressBookDetails.java
  com.bridgelabz.addressbook.AddressBookDetails
-com/bridgelabz/addressbook/AddressBook.java
- com.bridgelabz.addressbook.AddressBook
 com/bridgelabz/addressbook/AddressBookMain.java
  com.bridgelabz.addressbook.AddressBookMain
