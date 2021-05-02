@@ -1,6 +1,5 @@
 package com.bridgelabz.addressbook;
 
-
 import org.w3c.dom.stylesheets.LinkStyle;
 
 import java.util.ArrayList;
@@ -8,24 +7,63 @@ import java.util.List;
 
 public class AddressBookMain
 {
-    public List<AddressBookDetails> addressBookDetailsList;
+    public  static  List<AddressBookDetails> addressBookDetailsList;
      public static void main(String[] args)
      {
          System.out.println("Welcome to Address Book Program");
      }
-     public boolean addContact(AddressBookDetails addressBookDetails)
+     public List<AddressBookDetails> addContact(AddressBookDetails addressBookDetails)
      {
          System.out.println(addressBookDetails);
-         List<AddressBookDetails> addressBookDetailsList = new ArrayList<>();
+         addressBookDetailsList = new ArrayList<>();
          try
          {
              addressBookDetailsList.add(addressBookDetails);
-             System.out.println(addressBookDetailsList);
-             return true;
+             return addressBookDetailsList;
          } catch (Exception e)
          {
              e.printStackTrace();
          }
-         return  false;
+         return  addressBookDetailsList;
      }
+
+    public AddressBookDetails updateContact(List<AddressBookDetails> addressBookDetailsList, String name, String fieldName, String update) {
+        try {
+            for(AddressBookDetails contact : addressBookDetailsList){
+                if(contact.firstName.equals(name)) {
+                    switch (fieldName) {
+                        case "firstName":
+                            contact.firstName = update;
+                            break;
+                        case "lastName":
+                            contact.lastName = update;
+                            break;
+                        case "address":
+                            contact.address = update;
+                            System.out.println(contact);
+                            break;
+                        case "city":
+                            contact.city = update;
+                            break;
+                        case "state":
+                            contact.state = update;
+                            break;
+                        case "zip":
+                            contact.zip = update;
+                            break;
+                        case "phone":
+                            contact.phoneNo = update;
+                            break;
+                        case "email":
+                            contact.email = update;
+                            break;
+                    }
+                }
+                return contact;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

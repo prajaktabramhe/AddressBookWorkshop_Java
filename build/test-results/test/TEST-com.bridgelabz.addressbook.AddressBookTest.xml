@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-02T14:20:32" hostname="DESKTOP-0QBG6NF" time="0.103">
+<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-02T17:02:47" hostname="DESKTOP-0QBG6NF" time="0.125">
   <properties/>
-  <testcase name="givenContact_WhenAddedToAddressBook_ShouldReturnTrue()" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.103"/>
-  <system-out><![CDATA[AddressBookDetails{firstName='Prajakta', lastName='Bramhe', address='Ashtyavinayak colony', city='Nagpur', state='MH', zip='440034', phoneNo='8149240833', email='Prajkat@gmail.com'}
-[AddressBookDetails{firstName='Prajakta', lastName='Bramhe', address='Ashtyavinayak colony', city='Nagpur', state='MH', zip='440034', phoneNo='8149240833', email='Prajkat@gmail.com'}]
+  <testcase name="givenContactName_whenUpdated_shoouldReturn_TRUE()" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.125"/>
+  <system-out><![CDATA[AddressBookDetails{firstName='Prajakta', lastName='Bramhe', address=' Ashtyavinayak Colony', city='Napur', state=' MH', zip='440034', phoneNo='8149240833', email='prajakta@gmail.com'}
+AddressBookDetails{firstName='Prajakta', lastName='Bramhe', address='Ganesh colony', city='Napur', state=' MH', zip='440034', phoneNo='8149240833', email='prajakta@gmail.com'}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
