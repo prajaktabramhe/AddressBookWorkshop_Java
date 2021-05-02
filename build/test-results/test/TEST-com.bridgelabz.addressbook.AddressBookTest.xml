@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-02T18:00:43" hostname="DESKTOP-0QBG6NF" time="0.09">
+<testsuite name="com.bridgelabz.addressbook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-02T19:40:25" hostname="DESKTOP-0QBG6NF" time="0.056">
   <properties/>
-  <testcase name="givenListOfContacts_whenAdded_ShouldReturn_true()" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.09"/>
-  <system-out><![CDATA[AddressBookDetails{firstName='Samiksha', lastName='Shende', address='Ram Nagar', city='Wardha', state='MH', zip='442001', phoneNo='7385697450', email='shende.samiksha@gmail.com'}
-AddressBookDetails{firstName='Apurva', lastName='Yede', address='Murarka Layout', city='Wardha', state='MH', zip='442001', phoneNo='8794569789', email='apurvayede@gmail.com'}
-AddressBookDetails{firstName='Neha', lastName='Zade', address='Gajanan Nagar', city='Wardha', state='MH', zip='442001', phoneNo='9745073856', email='neha.zade@gmail.com'}
+  <testcase name="givenContact_WhenAddedToAddressBook_ShouldReturnTrue()" classname="com.bridgelabz.addressbook.AddressBookTest" time="0.056"/>
+  <system-out><![CDATA[New Address Book Created with Name : Family
+Contact Added Successfully.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
