@@ -3,6 +3,7 @@ package com.bridgelabz.addressbook;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AddressBookTest
@@ -35,5 +36,16 @@ public class AddressBookTest
         List<AddressBookDetails> addressBookDetailsList = addressBookMain.addContact(addressBookDetails);
         List<AddressBookDetails> deleteContactList = addressBookMain.deleteContact(addressBookDetailsList, "Prajakta");
         Assertions.assertEquals(0, deleteContactList.size());
+    }
+
+    @Test
+    public void givenListOfContacts_whenAdded_ShouldReturn_true() {
+        AddressBookMain addressBookMain = new AddressBookMain();
+        List<AddressBookDetails> addressBookDetailsList = new ArrayList<>();
+        addressBookDetailsList.add(new AddressBookDetails("Samiksha", "Shende", "Ram Nagar", "Wardha", "MH", "442001", "7385697450", "shende.samiksha@gmail.com"));
+        addressBookDetailsList.add(new AddressBookDetails("Apurva", "Yede", "Murarka Layout", "Wardha", "MH", "442001", "8794569789", "apurvayede@gmail.com"));
+        addressBookDetailsList.add(new AddressBookDetails("Neha", "Zade", "Gajanan Nagar", "Wardha", "MH", "442001", "9745073856", "neha.zade@gmail.com"));
+        List<AddressBookDetails> contactList = addressBookMain.addContactList(addressBookDetailsList);
+        Assertions.assertEquals(3, contactList.size());
     }
 }

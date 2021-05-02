@@ -100,4 +100,17 @@ public class AddressBookMain
         }
         return addressBookDetailsList;
     }
+    public List<AddressBookDetails> addContactList(List<AddressBookDetails> addressBookDetailsList)
+    {
+        try {
+            for (AddressBookDetails contact : addressBookDetailsList)
+            {
+                addContact(contact);
+            }
+            return addressBookDetailsList;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return addressBookDetailsList;
+    }
 }
