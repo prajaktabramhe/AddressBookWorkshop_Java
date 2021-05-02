@@ -26,4 +26,14 @@ public class AddressBookTest
         AddressBookDetails updateContact = addressBookMain.updateContact(addressBookDetailsList, "Prajakta", "address", "Ganesh colony");
         Assertions.assertEquals("Ganesh colony", updateContact.address);
     }
+
+    @Test
+    public void givenContactName_whenDeleted_ShouldReturn_true()
+    {
+        AddressBookMain addressBookMain = new AddressBookMain();
+        AddressBookDetails addressBookDetails = new AddressBookDetails("Prajakta", "Bramhe", "Lakshmi Nagar", "Nagpur", "MH", "440034", "8149240833", "prajakta14@gmail.com");
+        List<AddressBookDetails> addressBookDetailsList = addressBookMain.addContact(addressBookDetails);
+        List<AddressBookDetails> deleteContactList = addressBookMain.deleteContact(addressBookDetailsList, "Prajakta");
+        Assertions.assertEquals(0, deleteContactList.size());
+    }
 }
